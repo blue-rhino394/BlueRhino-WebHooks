@@ -51,7 +51,10 @@ export class webhookServer {
 
         this.app.post('/github', (req, res) => {
 
-            console.log(req.body);
+            
+            const ref = req.body.ref;
+
+            console.log(ref);
             res.send('Thanks!');
         });
     }
