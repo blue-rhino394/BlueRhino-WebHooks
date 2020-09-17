@@ -1,5 +1,6 @@
 ﻿import express, { Application } from "express";
 import { createServer, Server as HTTPServer } from "http";
+const bodyParser = require("body-parser");
 const path = require('path');
 
 
@@ -43,6 +44,11 @@ export class webhookServer {
 
     // Specifically configure the Express server
     private configureApp(): void {
+        this.app.use(bodyParser.urlencoded({ extended: false }));
+        this.app.use(bodyParser.json());
+
+
+
         this.app.post('/github', (req, res) => {
 
             console.log(req.body);
