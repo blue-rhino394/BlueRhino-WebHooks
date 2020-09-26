@@ -1,0 +1,5 @@
+{
+  "repo": "BlueRhino-SoftwareProject",
+  "branch": "test",
+  "deployCommand": "git -C ~/test/BlueRhino-SoftwareProject/ pull && npm install --prefix ~/test/BlueRhino-SoftwareProject/ && pm2 restart app_test"
+}
