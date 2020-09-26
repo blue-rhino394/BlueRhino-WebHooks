@@ -41,9 +41,13 @@
   <ItemGroup>
     <Folder Include="public\" />
     <Folder Include="src\" />
+    <Folder Include="src\interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\app.ts" />
+    <TypeScriptCompile Include="src\interfaces\deploySettings.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="src\webhookServer.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
