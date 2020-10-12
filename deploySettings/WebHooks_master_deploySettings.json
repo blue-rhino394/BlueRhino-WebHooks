@@ -1,5 +1,5 @@
 {
   "repo": "BlueRhino-WebHooks",
   "branch": "master",
-  "deployCommand": "git -C ~/BlueRhino-WebHooks/ pull && npm install --prefix ~/BlueRhino-WebHooks/ && pm2 restart webhooks"
+  "deployCommand": "git -C ~/BlueRhino-WebHooks/ reset --hard HEAD && git -C ~/BlueRhino-WebHooks/ pull && npm install --prefix ~/BlueRhino-WebHooks/ && pm2 restart webhooks"
 }
