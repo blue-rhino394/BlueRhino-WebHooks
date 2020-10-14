@@ -1,5 +1,5 @@
 {
   "repo": "BlueRhino-SoftwareProject",
   "branch": "master",
-  "deployCommand": "git -C ~/master/BlueRhino-SoftwareProject/ reset --hard HEAD && git -C ~/master/BlueRhino-SoftwareProject/ pull && npm install --prefix ~/master/BlueRhino-SoftwareProject/ && pm2 restart app_production"
+  "deployCommand": "git -C ~/production/BlueRhino-SoftwareProject/ reset --hard HEAD && git -C ~/production/BlueRhino-SoftwareProject/ pull && npm install --prefix ~/production/BlueRhino-SoftwareProject/ && pm2 restart app_production"
 }
